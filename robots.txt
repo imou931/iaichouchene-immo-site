@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://iaichouchene-immo.fr/sitemap.xml
