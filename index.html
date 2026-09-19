@@ -26,29 +26,83 @@
 <meta property="og:title" content="EI IAICHOUCHENE IMMOBILIER — Mandataire immobilier à Gagny">
 <meta property="og:description" content="Mandataire immobilier indépendant, résidentiel et fonds de commerce, plus de 10 ans d'expérience sur Gagny, Chelles et alentours. Estimation gratuite et sans engagement.">
 <meta property="og:url" content="https://iaichouchene-immo.fr/">
-<meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="EI IAICHOUCHENE IMMOBILIER — Mandataire immobilier à Gagny">
 <meta name="twitter:description" content="Estimation gratuite et sans engagement, résidentiel et fonds de commerce à Gagny, Chelles et alentours.">
+<meta property="og:image" content="https://iaichouchene-immo.fr/photo-profil.jpg">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:image:alt" content="M. Iaichouchene, mandataire immobilier à Gagny">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:image" content="https://iaichouchene-immo.fr/photo-profil.jpg">
 
 <script type="application/ld+json">
 {
   "@context": "https://schema.org",
-  "@type": "RealEstateAgent",
-  "name": "EI IAICHOUCHENE IMMOBILIER",
-  "description": "Mandataire immobilier indépendant, résidentiel et fonds de commerce, plus de 10 ans d'expérience sur Gagny, Chelles et alentours.",
-  "url": "https://iaichouchene-immo.fr/",
-  "telephone": "+33660476246",
-  "email": "imou931@hotmail.com",
-  "areaServed": [
-    { "@type": "City", "name": "Gagny" },
-    { "@type": "City", "name": "Chelles" }
-  ],
-  "address": {
-    "@type": "PostalAddress",
-    "addressLocality": "Gagny",
-    "postalCode": "93220",
-    "addressCountry": "FR"
-  }
+  "@graph": [
+    {
+      "@type": ["LocalBusiness", "RealEstateAgent"],
+      "@id": "https://iaichouchene-immo.fr/#business",
+      "name": "EI IAICHOUCHENE IMMOBILIER",
+      "alternateName": "Iaichouchene Immobilier",
+      "url": "https://iaichouchene-immo.fr",
+      "telephone": "+33660476246",
+      "email": "imou931@hotmail.com",
+      "description": "Mandataire immobilier indépendant, résidentiel et fonds de commerce. Plus de 10 ans d'expérience sur Gagny, Chelles et alentours. Estimation gratuite et sans engagement.",
+      "image": "https://iaichouchene-immo.fr/photo-profil.jpg",
+      "address": {
+        "@type": "PostalAddress",
+        "addressLocality": "Gagny",
+        "postalCode": "93220",
+        "addressCountry": "FR"
+      },
+      "geo": {
+        "@type": "GeoCoordinates",
+        "latitude": 48.8827,
+        "longitude": 2.5408
+      },
+      "areaServed": [
+        {"@type": "City", "name": "Gagny"},
+        {"@type": "City", "name": "Chelles"},
+        {"@type": "City", "name": "Montfermeil"},
+        {"@type": "City", "name": "Villemomble"},
+        {"@type": "City", "name": "Le Raincy"}
+      ],
+      "priceRange": "€€",
+      "openingHoursSpecification": [
+        {
+          "@type": "OpeningHoursSpecification",
+          "dayOfWeek": ["Monday","Tuesday","Wednesday","Thursday","Friday","Saturday","Sunday"],
+          "opens": "08:00",
+          "closes": "20:00"
+        }
+      ],
+      "hasOfferCatalog": {
+        "@type": "OfferCatalog",
+        "name": "Services immobiliers",
+        "itemListElement": [
+          {"@type": "Offer", "itemOffered": {"@type": "Service", "name": "Vente immobilière résidentielle"}},
+          {"@type": "Offer", "itemOffered": {"@type": "Service", "name": "Vente commerciale et fonds de commerce"}},
+          {"@type": "Offer", "itemOffered": {"@type": "Service", "name": "Estimation immobilière gratuite"}},
+          {"@type": "Offer", "itemOffered": {"@type": "Service", "name": "Location résidentielle et commerciale"}}
+        ]
+      }
+    },
+    {
+      "@type": "Person",
+      "@id": "https://iaichouchene-immo.fr/#agent",
+      "name": "Mouloud Iaichouchene",
+      "jobTitle": "Mandataire immobilier indépendant",
+      "image": "https://iaichouchene-immo.fr/photo-profil.jpg",
+      "worksFor": {"@id": "https://iaichouchene-immo.fr/#business"},
+      "telephone": "+33660476246",
+      "address": {
+        "@type": "PostalAddress",
+        "addressLocality": "Gagny",
+        "postalCode": "93220",
+        "addressCountry": "FR"
+      }
+    }
+  ]
 }
 </script>
 <link rel="preconnect" href="https://fonts.googleapis.com">
